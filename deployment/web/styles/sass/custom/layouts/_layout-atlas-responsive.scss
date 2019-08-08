@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Atlas layout
+   
+   Extra styling for responsive layouts
+========================================================================== */
+.layout-atlas-responsive-default {
+    $sidebar-width: 54px;
+
+	@media (min-width: $screen-sm) {
+        .mx-scrollcontainer:not(.mx-scrollcontainer-open) > .region-sidebar {
+            width: $sidebar-width !important;
+
+            .mx-scrollcontainer-wrapper > .mx-navigationtree ul li {
+                &.mx-navigationtree-has-items:hover {
+                    ul {
+                        left: $sidebar-width;
+                    }
+                }
+            }
+        }
+    }
+
+    // Sidebar
+    .region-sidebar {
+        .toggle-btn {
+            width: $sidebar-width;
+        }
+
+        .mx-scrollcontainer-wrapper > .mx-navigationtree {
+            .navbar-inner > ul > li {
+                & > a {
+                    height: $topbar-minimalheight + 1px;
+                    // Glyph icon
+                    .glyphicon {
+                        margin-left: -8px;
+                    }
+                    &.active {
+                        .glyphicon {
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

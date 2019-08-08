@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Navigation
+   
+========================================================================== */
+.mx-navigationtree {
+    /* Every navigation item */
+    .navbar-inner > ul {
+        & > li {
+            & > a {
+                img {
+                    width: 25px; // Default size
+                    height: auto;
+                    margin-right: 18px;
+                }
+                
+            }
+        }
+    }
+}
+
+//== Regions
+//## Behavior in the different regions
+//-------------------------------------------------------------------------------------------------------------------//
+
+
+// When used in sidebar
+.region-sidebar {
+    .mx-navigationtree {
+        .navbar-inner > ul {
+            & > li {
+            	a:hover,
+                a:focus,
+                a.active {
+                    .caret {
+                        border-top-color: #323232;
+                        border-bottom-color: #323232;
+                    }
+                }
+                a.active {
+                    color: $brand-primary;
+                    background-color: #e5e5e5;
+                }
+            }
+        }
+		
+		/* Sub navigation item specific */
+        li.mx-navigationtree-has-items {
+            & > ul {
+                border-right: 1px solid #cccccc;
+                li {
+                    img {
+                        height: 12px;
+                        margin-top: -1px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+Buildfile: C:\Users\dhayl\Documents\Mendix\Dont Panic-main\deployment\build_core.xml
+
+deploy:
+     [copy] Copying 46 files to C:\Users\dhayl\Documents\Mendix\Dont Panic-main\deployment
+     [copy] Copying 28 files to C:\Users\dhayl\Documents\Mendix\Dont Panic-main\deployment\model\lib\userlib
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<title>Permission Denied</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=2">
+
+<script>
+	(function(d, script) {
+		script = d.createElement('script');
+		script.type = 'text/javascript';
+		script.async = true;
+		script.onload = function() {
+			_mdsp.init({
+				appId : '_mscontent',
+				appInfoPath : "/rest/os-bar/v1/config",
+				initialize : true
+			});
+		};
+		script.src = 'https://static.eu1.mindsphere.io/osbar/v4/js/main.min.js';
+		d.getElementsByTagName('head')[0].appendChild(script);
+	}(document));
+</script>
+
+</head>
+
+<body style="margin: 0px; padding: 0px; overflow: hidden">
+
+	<div id="_mscontent" class=center>
+		<div>
+			<img src="../img/were_sorry-2@1x.svg">
+		</div>
+		<h1 class="siemens_font">Dear user</h1>		
+		<p>
+			<div class="siemens_font">The given CockpitApplicationName</div>
+			<div id="CockpitApplicationNameId" class="siemens_font"	style="font-weight: bold;"></div>
+			<div class="siemens_font">was not found in the provided authorization information.</div>
+			<div class="siemens_font">Please contact a tenant administrator	who can validate the installation.</div>
+			<div class="siemens_font">For more information see also:</div>
+			<a class="siemens_font" target="_blank" rel="noopener noreferrer"
+				href="https://docs.mendix.com/developerportal/deploy/deploying-to-mindsphere">Deploying to MindSphere</a>		
+	</div>
+	<script>
+		function GetURLParameter(sParam) {
+			var sPageURL = window.location.search.substring(1);
+			var sURLVariables = sPageURL.split('&');
+			for (var i = 0; i < sURLVariables.length; i++) {
+				var sParameterName = sURLVariables[i].split('=');
+				if (sParameterName[0] == sParam) {
+					return sParameterName[1];
+				}
+			}
+		}
+		var CockpitApplicationName = GetURLParameter('can');
+		document.getElementById("CockpitApplicationNameId").innerText = CockpitApplicationName;
+	</script>
+</body>
+<style>
+body {
+	background-color: FFFFFF;
+}
+
+.siemens_font {
+	font-family: 'Siemens Sans';
+}
+
+.center {
+	text-align: center;
+	color: #D2D2D2;
+	margin: 7% auto !important;
+	padding: 10px;
+}
+</style>
+
+</html>

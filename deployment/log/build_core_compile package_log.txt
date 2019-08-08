@@ -1,0 +1,12 @@
+Buildfile: C:\Users\dhayl\Documents\Mendix\Dont Panic-main\deployment\build_core.xml
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\dhayl\Documents\Mendix\Dont Panic-main\deployment\run\bin
+
+package:
+      [jar] Building jar: C:\Users\dhayl\Documents\Mendix\Dont Panic-main\deployment\model\bundles\project.jar
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+
+

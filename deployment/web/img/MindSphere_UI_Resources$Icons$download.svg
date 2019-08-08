@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <path id="download-default-a" d="M13,16.2928932 L19.1464466,10.1464466 L19.8535534,10.8535534 L12.5,18.2071068 L5.14644661,10.8535534 L5.85355339,10.1464466 L12,16.2928932 L12,1.96875 L13,1.96875 L13,16.2928932 Z M19,21 L19,18 L20,18 L20,22 L5,22 L5,18 L6,18 L6,21 L19,21 Z"/>
+  </defs>
+  <use xlink:href="#download-default-a"/>
+</svg>

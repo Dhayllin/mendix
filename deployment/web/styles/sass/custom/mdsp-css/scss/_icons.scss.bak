@@ -1,0 +1,1037 @@
+@mixin iconMdspstyles {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+}
+
+.iconMdsp {
+  @include iconMdspstyles;
+  font-size: 16px;
+
+  &:before {
+    font-size: 16px;
+    vertical-align: middle;
+  }
+
+  > a {
+    font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+    font-size: 15px;
+    vertical-align: middle;
+  }
+}
+
+@mixin iconMdsp($filename, $insert: before) {
+  &:#{$insert} {
+    @include iconMdspstyles;
+    content: iconMdspchar($filename);
+  }
+}
+
+@function iconMdspchar($filename) {
+  $char: "";
+
+  @if $filename == addBook {
+    $char: "\E001";
+  }
+  @if $filename == agent {
+    $char: "\E002";
+  }
+  @if $filename == arrowCircleccw {
+    $char: "\E003";
+  }
+  @if $filename == arrowCirclecw {
+    $char: "\E004";
+  }
+  @if $filename == arrowCircleDown {
+    $char: "\E005";
+  }
+  @if $filename == arrowCircleInverted {
+    $char: "\E006";
+  }
+  @if $filename == arrowCircleLeft {
+    $char: "\E007";
+  }
+  @if $filename == arrowCircleRight {
+    $char: "\E008";
+  }
+  @if $filename == arrowCircleUp {
+    $char: "\E009";
+  }
+  @if $filename == arrowExclamationMark {
+    $char: "\E00A";
+  }
+  @if $filename == arrowFirst {
+    $char: "\E00B";
+  }
+  @if $filename == arrowFirstTop {
+    $char: "\E00C";
+  }
+  @if $filename == arrowGoTo {
+    $char: "\E00D";
+  }
+  @if $filename == arrowLast {
+    $char: "\E00E";
+  }
+  @if $filename == arrowLastBottom {
+    $char: "\E00F";
+  }
+  @if $filename == arrowSingleDown {
+    $char: "\E010";
+  }
+  @if $filename == arrowSingleLeft {
+    $char: "\E011";
+  }
+  @if $filename == arrowSingleRight {
+    $char: "\E012";
+  }
+  @if $filename == arrowSingleUp {
+    $char: "\E013";
+  }
+  @if $filename == arrowSquare {
+    $char: "\E014";
+  }
+  @if $filename == aspect {
+    $char: "\E015";
+  }
+  @if $filename == asset {
+    $char: "\E016";
+  }
+  @if $filename == assetArrow {
+    $char: "\E017";
+  }
+  @if $filename == assetInverted {
+    $char: "\E018";
+  }
+  @if $filename == assetNetwork {
+    $char: "\E019";
+  }
+  @if $filename == audit {
+    $char: "\E01A";
+  }
+  @if $filename == bell {
+    $char: "\E01B";
+  }
+  @if $filename == bellAlternative {
+    $char: "\E01C";
+  }
+  @if $filename == block {
+    $char: "\E01D";
+  }
+  @if $filename == blockInverted {
+    $char: "\E01E";
+  }
+  @if $filename == box {
+    $char: "\E01F";
+  }
+  @if $filename == calender {
+    $char: "\E020";
+  }
+  @if $filename == calenderAlternative {
+    $char: "\E021";
+  }
+  @if $filename == caretDown {
+    $char: "\E022";
+  }
+  @if $filename == caretLeft {
+    $char: "\E023";
+  }
+  @if $filename == caretRight {
+    $char: "\E024";
+  }
+  @if $filename == caretUp {
+    $char: "\E025";
+  }
+  @if $filename == check {
+    $char: "\E026";
+  }
+  @if $filename == checkCircle {
+    $char: "\E027";
+  }
+  @if $filename == checkInverted {
+    $char: "\E028";
+  }
+  @if $filename == circleToCircle {
+    $char: "\E029";
+  }
+  @if $filename == clear {
+    $char: "\E02A";
+  }
+  @if $filename == clearCircle {
+    $char: "\E02B";
+  }
+  @if $filename == clearInverted {
+    $char: "\E02C";
+  }
+  @if $filename == clipboard {
+    $char: "\E02D";
+  }
+  @if $filename == clipboardOk {
+    $char: "\E02E";
+  }
+  @if $filename == cog {
+    $char: "\E02F";
+  }
+  @if $filename == cogbox {
+    $char: "\E030";
+  }
+  @if $filename == cogInverted {
+    $char: "\E031";
+  }
+  @if $filename == connect {
+    $char: "\E032";
+  }
+  @if $filename == cursorSquare {
+    $char: "\E033";
+  }
+  @if $filename == cursorSquarestrikethrough {
+    $char: "\E034";
+  }
+  @if $filename == delete {
+    $char: "\E035";
+  }
+  @if $filename == deselectAll {
+    $char: "\E036";
+  }
+  @if $filename == dotsh {
+    $char: "\E037";
+  }
+  @if $filename == dotshBlack {
+    $char: "\E038";
+  }
+  @if $filename == dotsv {
+    $char: "\E039";
+  }
+  @if $filename == download {
+    $char: "\E03A";
+  }
+  @if $filename == downloadBlack {
+    $char: "\E03B";
+  }
+  @if $filename == downloadBold {
+    $char: "\E03C";
+  }
+  @if $filename == drilldownAction {
+    $char: "\E03D";
+  }
+  @if $filename == edit {
+    $char: "\E03E";
+  }
+  @if $filename == editBold {
+    $char: "\E03F";
+  }
+  @if $filename == editInverted {
+    $char: "\E040";
+  }
+  @if $filename == editSquare {
+    $char: "\E041";
+  }
+  @if $filename == exclamationmark {
+    $char: "\E042";
+  }
+  @if $filename == exclamationmarkCircle {
+    $char: "\E043";
+  }
+  @if $filename == exclamationmarkCircleInverted {
+    $char: "\E044";
+  }
+  @if $filename == exclamationmarkDiamond {
+    $char: "\E045";
+  }
+  @if $filename == exclamationmarkDiamondInverted {
+    $char: "\E046";
+  }
+  @if $filename == exclamationmarkInverted {
+    $char: "\E047";
+  }
+  @if $filename == exit {
+    $char: "\E048";
+  }
+  @if $filename == extension {
+    $char: "\E049";
+  }
+  @if $filename == eye {
+    $char: "\E04A";
+  }
+  @if $filename == eyeStrikethrough {
+    $char: "\E04B";
+  }
+  @if $filename == filetree {
+    $char: "\E04C";
+  }
+  @if $filename == flag {
+    $char: "\E04D";
+  }
+  @if $filename == flagFilled {
+    $char: "\E04E";
+  }
+  @if $filename == folder {
+    $char: "\E04F";
+  }
+  @if $filename == frames {
+    $char: "\E050";
+  }
+  @if $filename == funnel {
+    $char: "\E051";
+  }
+  @if $filename == funnelBold {
+    $char: "\E052";
+  }
+  @if $filename == funnelEmpty {
+    $char: "\E053";
+  }
+  @if $filename == funnelList {
+    $char: "\E054";
+  }
+  @if $filename == globe {
+    $char: "\E055";
+  }
+  @if $filename == graph {
+    $char: "\E056";
+  }
+  @if $filename == graphInverted {
+    $char: "\E057";
+  }
+  @if $filename == grid {
+    $char: "\E058";
+  }
+  @if $filename == gridInverted {
+    $char: "\E059";
+  }
+  @if $filename == headset {
+    $char: "\E05A";
+  }
+  @if $filename == house {
+    $char: "\E05B";
+  }
+  @if $filename == houseInverted {
+    $char: "\E05C";
+  }
+  @if $filename == incognito {
+    $char: "\E05D";
+  }
+  @if $filename == infoCircle {
+    $char: "\E05E";
+  }
+  @if $filename == infoCircleInverted {
+    $char: "\E05F";
+  }
+  @if $filename == leaf {
+    $char: "\E060";
+  }
+  @if $filename == legal {
+    $char: "\E061";
+  }
+  @if $filename == legalInverted {
+    $char: "\E062";
+  }
+  @if $filename == letter {
+    $char: "\E063";
+  }
+  @if $filename == link {
+    $char: "\E064";
+  }
+  @if $filename == listBulleted {
+    $char: "\E065";
+  }
+  @if $filename == listBulletedPlus {
+    $char: "\E066";
+  }
+  @if $filename == locationMarker {
+    $char: "\E067";
+  }
+  @if $filename == lock {
+    $char: "\E068";
+  }
+  @if $filename == lockOpen {
+    $char: "\E069";
+  }
+  @if $filename == loupe {
+    $char: "\E06A";
+  }
+  @if $filename == loupeInverted {
+    $char: "\E06B";
+  }
+  @if $filename == map {
+    $char: "\E06C";
+  }
+  @if $filename == megaphone {
+    $char: "\E06D";
+  }
+  @if $filename == minus {
+    $char: "\E06E";
+  }
+  @if $filename == minusCircle {
+    $char: "\E06F";
+  }
+  @if $filename == move {
+    $char: "\E070";
+  }
+  @if $filename == moveInverted {
+    $char: "\E071";
+  }
+  @if $filename == navigateArrow {
+    $char: "\E072";
+  }
+  @if $filename == navigateArrowBack {
+    $char: "\E073";
+  }
+  @if $filename == navigateRight {
+    $char: "\E074";
+  }
+  @if $filename == navigateRightInverted {
+    $char: "\E075";
+  }
+  @if $filename == outgoing {
+    $char: "\E076";
+  }
+  @if $filename == outgoingApp {
+    $char: "\E077";
+  }
+  @if $filename == outgoingAppCircle {
+    $char: "\E078";
+  }
+  @if $filename == outgoingMindsphere {
+    $char: "\E079";
+  }
+  @if $filename == package {
+    $char: "\E07A";
+  }
+  @if $filename == paperclip {
+    $char: "\E07B";
+  }
+  @if $filename == phone {
+    $char: "\E07C";
+  }
+  @if $filename == pie {
+    $char: "\E07D";
+  }
+  @if $filename == plus {
+    $char: "\E07E";
+  }
+  @if $filename == plusCircle {
+    $char: "\E07F";
+  }
+  @if $filename == plusInverted {
+    $char: "\E080";
+  }
+  @if $filename == provider {
+    $char: "\E081";
+  }
+  @if $filename == puzzle {
+    $char: "\E082";
+  }
+  @if $filename == puzzleInverted {
+    $char: "\E083";
+  }
+  @if $filename == questionmarkCircle {
+    $char: "\E084";
+  }
+  @if $filename == rectanglesStacked {
+    $char: "\E085";
+  }
+  @if $filename == roles {
+    $char: "\E086";
+  }
+  @if $filename == scopeA {
+    $char: "\E087";
+  }
+  @if $filename == scopeB {
+    $char: "\E088";
+  }
+  @if $filename == selectAll {
+    $char: "\E089";
+  }
+  @if $filename == settings {
+    $char: "\E08A";
+  }
+  @if $filename == share {
+    $char: "\E08B";
+  }
+  @if $filename == shoppingCart {
+    $char: "\E08C";
+  }
+  @if $filename == sidebarHide {
+    $char: "\E08D";
+  }
+  @if $filename == sidebarShow {
+    $char: "\E08E";
+  }
+  @if $filename == sidebarWindow {
+    $char: "\E08F";
+  }
+  @if $filename == sort {
+    $char: "\E090";
+  }
+  @if $filename == sortAscending {
+    $char: "\E091";
+  }
+  @if $filename == sortDescending {
+    $char: "\E092";
+  }
+  @if $filename == sortFilled {
+    $char: "\E093";
+  }
+  @if $filename == speechbubble {
+    $char: "\E094";
+  }
+  @if $filename == speedo {
+    $char: "\E095";
+  }
+  @if $filename == speedo2Inverted {
+    $char: "\E096";
+  }
+  @if $filename == speedoAlternative {
+    $char: "\E097";
+  }
+  @if $filename == stemDown {
+    $char: "\E098";
+  }
+  @if $filename == stemLeft {
+    $char: "\E099";
+  }
+  @if $filename == stemRight {
+    $char: "\E09A";
+  }
+  @if $filename == stemUp {
+    $char: "\E09B";
+  }
+  @if $filename == subtenant {
+    $char: "\E09C";
+  }
+  @if $filename == tag {
+    $char: "\E09D";
+  }
+  @if $filename == ticket {
+    $char: "\E09E";
+  }
+  @if $filename == types {
+    $char: "\E09F";
+  }
+  @if $filename == typesInverted {
+    $char: "\E0A0";
+  }
+  @if $filename == update {
+    $char: "\E0A1";
+  }
+  @if $filename == user {
+    $char: "\E0A2";
+  }
+  @if $filename == userMultiple {
+    $char: "\E0A3";
+  }
+  @if $filename == users {
+    $char: "\E0A4";
+  }
+  @if $filename == variableLink {
+    $char: "\E0A5";
+  }
+  @if $filename == variableUnlink {
+    $char: "\E0A6";
+  }
+  @return $char;
+}
+
+.iconMdsp.addBook {
+  @include iconMdsp(addBook);
+}
+.iconMdsp.agent {
+  @include iconMdsp(agent);
+}
+.iconMdsp.arrowCircleccw {
+  @include iconMdsp(arrowCircleccw);
+}
+.iconMdsp.arrowCirclecw {
+  @include iconMdsp(arrowCirclecw);
+}
+.iconMdsp.arrowCircleDown {
+  @include iconMdsp(arrowCircleDown);
+}
+.iconMdsp.arrowCircleInverted {
+  @include iconMdsp(arrowCircleInverted);
+}
+.iconMdsp.arrowCircleLeft {
+  @include iconMdsp(arrowCircleLeft);
+}
+.iconMdsp.arrowCircleRight {
+  @include iconMdsp(arrowCircleRight);
+}
+.iconMdsp.arrowCircleUp {
+  @include iconMdsp(arrowCircleUp);
+}
+.iconMdsp.arrowExclamationMark {
+  @include iconMdsp(arrowExclamationMark);
+}
+.iconMdsp.arrowFirst {
+  @include iconMdsp(arrowFirst);
+}
+.iconMdsp.arrowFirstTop {
+  @include iconMdsp(arrowFirstTop);
+}
+.iconMdsp.arrowGoTo {
+  @include iconMdsp(arrowGoTo);
+}
+.iconMdsp.arrowLast {
+  @include iconMdsp(arrowLast);
+}
+.iconMdsp.arrowLastBottom {
+  @include iconMdsp(arrowLastBottom);
+}
+.iconMdsp.arrowSingleDown {
+  @include iconMdsp(arrowSingleDown);
+}
+.iconMdsp.arrowSingleLeft {
+  @include iconMdsp(arrowSingleLeft);
+}
+.iconMdsp.arrowSingleRight {
+  @include iconMdsp(arrowSingleRight);
+}
+.iconMdsp.arrowSingleUp {
+  @include iconMdsp(arrowSingleUp);
+}
+.iconMdsp.arrowSquare {
+  @include iconMdsp(arrowSquare);
+}
+.iconMdsp.aspect {
+  @include iconMdsp(aspect);
+}
+.iconMdsp.asset {
+  @include iconMdsp(asset);
+}
+.iconMdsp.assetArrow {
+  @include iconMdsp(assetArrow);
+}
+.iconMdsp.assetInverted {
+  @include iconMdsp(assetInverted);
+}
+.iconMdsp.assetNetwork {
+  @include iconMdsp(assetNetwork);
+}
+.iconMdsp.audit {
+  @include iconMdsp(audit);
+}
+.iconMdsp.bell {
+  @include iconMdsp(bell);
+}
+.iconMdsp.bellAlternative {
+  @include iconMdsp(bellAlternative);
+}
+.iconMdsp.block {
+  @include iconMdsp(block);
+}
+.iconMdsp.blockInverted {
+  @include iconMdsp(blockInverted);
+}
+.iconMdsp.box {
+  @include iconMdsp(box);
+}
+.iconMdsp.calender {
+  @include iconMdsp(calender);
+}
+.iconMdsp.calenderAlternative {
+  @include iconMdsp(calenderAlternative);
+}
+.iconMdsp.caretDown {
+  @include iconMdsp(caretDown);
+}
+.iconMdsp.caretLeft {
+  @include iconMdsp(caretLeft);
+}
+.iconMdsp.caretRight {
+  @include iconMdsp(caretRight);
+}
+.iconMdsp.caretUp {
+  @include iconMdsp(caretUp);
+}
+.iconMdsp.check {
+  @include iconMdsp(check);
+}
+.iconMdsp.checkCircle {
+  @include iconMdsp(checkCircle);
+}
+.iconMdsp.checkInverted {
+  @include iconMdsp(checkInverted);
+}
+.iconMdsp.circleToCircle {
+  @include iconMdsp(circleToCircle);
+}
+.iconMdsp.clear {
+  @include iconMdsp(clear);
+}
+.iconMdsp.clearCircle {
+  @include iconMdsp(clearCircle);
+}
+.iconMdsp.clearInverted {
+  @include iconMdsp(clearInverted);
+}
+.iconMdsp.clipboard {
+  @include iconMdsp(clipboard);
+}
+.iconMdsp.clipboardOk {
+  @include iconMdsp(clipboardOk);
+}
+.iconMdsp.cog {
+  @include iconMdsp(cog);
+}
+.iconMdsp.cogbox {
+  @include iconMdsp(cogbox);
+}
+.iconMdsp.cogInverted {
+  @include iconMdsp(cogInverted);
+}
+.iconMdsp.connect {
+  @include iconMdsp(connect);
+}
+.iconMdsp.cursorSquare {
+  @include iconMdsp(cursorSquare);
+}
+.iconMdsp.cursorSquarestrikethrough {
+  @include iconMdsp(cursorSquarestrikethrough);
+}
+.iconMdsp.delete {
+  @include iconMdsp(delete);
+}
+.iconMdsp.deselectAll {
+  @include iconMdsp(deselectAll);
+}
+.iconMdsp.dotsh {
+  @include iconMdsp(dotsh);
+}
+.iconMdsp.dotshBlack {
+  @include iconMdsp(dotshBlack);
+}
+.iconMdsp.dotsv {
+  @include iconMdsp(dotsv);
+}
+.iconMdsp.download {
+  @include iconMdsp(download);
+}
+.iconMdsp.downloadBlack {
+  @include iconMdsp(downloadBlack);
+}
+.iconMdsp.downloadBold {
+  @include iconMdsp(downloadBold);
+}
+.iconMdsp.drilldownAction {
+  @include iconMdsp(drilldownAction);
+}
+.iconMdsp.edit {
+  @include iconMdsp(edit);
+}
+.iconMdsp.editBold {
+  @include iconMdsp(editBold);
+}
+.iconMdsp.editInverted {
+  @include iconMdsp(editInverted);
+}
+.iconMdsp.editSquare {
+  @include iconMdsp(editSquare);
+}
+.iconMdsp.exclamationmark {
+  @include iconMdsp(exclamationmark);
+}
+.iconMdsp.exclamationmarkCircle {
+  @include iconMdsp(exclamationmarkCircle);
+}
+.iconMdsp.exclamationmarkCircleInverted {
+  @include iconMdsp(exclamationmarkCircleInverted);
+}
+.iconMdsp.exclamationmarkDiamond {
+  @include iconMdsp(exclamationmarkDiamond);
+}
+.iconMdsp.exclamationmarkDiamondInverted {
+  @include iconMdsp(exclamationmarkDiamondInverted);
+}
+.iconMdsp.exclamationmarkInverted {
+  @include iconMdsp(exclamationmarkInverted);
+}
+.iconMdsp.exit {
+  @include iconMdsp(exit);
+}
+.iconMdsp.extension {
+  @include iconMdsp(extension);
+}
+.iconMdsp.eye {
+  @include iconMdsp(eye);
+}
+.iconMdsp.eyeStrikethrough {
+  @include iconMdsp(eyeStrikethrough);
+}
+.iconMdsp.filetree {
+  @include iconMdsp(filetree);
+}
+.iconMdsp.flag {
+  @include iconMdsp(flag);
+}
+.iconMdsp.flagFilled {
+  @include iconMdsp(flagFilled);
+}
+.iconMdsp.folder {
+  @include iconMdsp(folder);
+}
+.iconMdsp.frames {
+  @include iconMdsp(frames);
+}
+.iconMdsp.funnel {
+  @include iconMdsp(funnel);
+}
+.iconMdsp.funnelBold {
+  @include iconMdsp(funnelBold);
+}
+.iconMdsp.funnelEmpty {
+  @include iconMdsp(funnelEmpty);
+}
+.iconMdsp.funnelList {
+  @include iconMdsp(funnelList);
+}
+.iconMdsp.globe {
+  @include iconMdsp(globe);
+}
+.iconMdsp.graph {
+  @include iconMdsp(graph);
+}
+.iconMdsp.graphInverted {
+  @include iconMdsp(graphInverted);
+}
+.iconMdsp.grid {
+  @include iconMdsp(grid);
+}
+.iconMdsp.gridInverted {
+  @include iconMdsp(gridInverted);
+}
+.iconMdsp.headset {
+  @include iconMdsp(headset);
+}
+.iconMdsp.house {
+  @include iconMdsp(house);
+}
+.iconMdsp.houseInverted {
+  @include iconMdsp(houseInverted);
+}
+.iconMdsp.incognito {
+  @include iconMdsp(incognito);
+}
+.iconMdsp.infoCircle {
+  @include iconMdsp(infoCircle);
+}
+.iconMdsp.infoCircleInverted {
+  @include iconMdsp(infoCircleInverted);
+}
+.iconMdsp.leaf {
+  @include iconMdsp(leaf);
+}
+.iconMdsp.legal {
+  @include iconMdsp(legal);
+}
+.iconMdsp.legalInverted {
+  @include iconMdsp(legalInverted);
+}
+.iconMdsp.letter {
+  @include iconMdsp(letter);
+}
+.iconMdsp.link {
+  @include iconMdsp(link);
+}
+.iconMdsp.listBulleted {
+  @include iconMdsp(listBulleted);
+}
+.iconMdsp.listBulletedPlus {
+  @include iconMdsp(listBulletedPlus);
+}
+.iconMdsp.locationMarker {
+  @include iconMdsp(locationMarker);
+}
+.iconMdsp.lock {
+  @include iconMdsp(lock);
+}
+.iconMdsp.lockOpen {
+  @include iconMdsp(lockOpen);
+}
+.iconMdsp.loupe {
+  @include iconMdsp(loupe);
+}
+.iconMdsp.loupeInverted {
+  @include iconMdsp(loupeInverted);
+}
+.iconMdsp.map {
+  @include iconMdsp(map);
+}
+.iconMdsp.megaphone {
+  @include iconMdsp(megaphone);
+}
+.iconMdsp.minus {
+  @include iconMdsp(minus);
+}
+.iconMdsp.minusCircle {
+  @include iconMdsp(minusCircle);
+}
+.iconMdsp.move {
+  @include iconMdsp(move);
+}
+.iconMdsp.moveInverted {
+  @include iconMdsp(moveInverted);
+}
+.iconMdsp.navigateArrow {
+  @include iconMdsp(navigateArrow);
+}
+.iconMdsp.navigateArrowBack {
+  @include iconMdsp(navigateArrowBack);
+}
+.iconMdsp.navigateRight {
+  @include iconMdsp(navigateRight);
+}
+.iconMdsp.navigateRightInverted {
+  @include iconMdsp(navigateRightInverted);
+}
+.iconMdsp.outgoing {
+  @include iconMdsp(outgoing);
+}
+.iconMdsp.outgoingApp {
+  @include iconMdsp(outgoingApp);
+}
+.iconMdsp.outgoingAppCircle {
+  @include iconMdsp(outgoingAppCircle);
+}
+.iconMdsp.outgoingMindsphere {
+  @include iconMdsp(outgoingMindsphere);
+}
+.iconMdsp.package {
+  @include iconMdsp(package);
+}
+.iconMdsp.paperclip {
+  @include iconMdsp(paperclip);
+}
+.iconMdsp.phone {
+  @include iconMdsp(phone);
+}
+.iconMdsp.pie {
+  @include iconMdsp(pie);
+}
+.iconMdsp.plus {
+  @include iconMdsp(plus);
+}
+.iconMdsp.plusCircle {
+  @include iconMdsp(plusCircle);
+}
+.iconMdsp.plusInverted {
+  @include iconMdsp(plusInverted);
+}
+.iconMdsp.provider {
+  @include iconMdsp(provider);
+}
+.iconMdsp.puzzle {
+  @include iconMdsp(puzzle);
+}
+.iconMdsp.puzzleInverted {
+  @include iconMdsp(puzzleInverted);
+}
+.iconMdsp.questionmarkCircle {
+  @include iconMdsp(questionmarkCircle);
+}
+.iconMdsp.rectanglesStacked {
+  @include iconMdsp(rectanglesStacked);
+}
+.iconMdsp.roles {
+  @include iconMdsp(roles);
+}
+.iconMdsp.scopeA {
+  @include iconMdsp(scopeA);
+}
+.iconMdsp.scopeB {
+  @include iconMdsp(scopeB);
+}
+.iconMdsp.selectAll {
+  @include iconMdsp(selectAll);
+}
+.iconMdsp.settings {
+  @include iconMdsp(settings);
+}
+.iconMdsp.share {
+  @include iconMdsp(share);
+}
+.iconMdsp.shoppingCart {
+  @include iconMdsp(shoppingCart);
+}
+.iconMdsp.sidebarHide {
+  @include iconMdsp(sidebarHide);
+}
+.iconMdsp.sidebarShow {
+  @include iconMdsp(sidebarShow);
+}
+.iconMdsp.sidebarWindow {
+  @include iconMdsp(sidebarWindow);
+}
+.iconMdsp.sort {
+  @include iconMdsp(sort);
+}
+.iconMdsp.sortAscending {
+  @include iconMdsp(sortAscending);
+}
+.iconMdsp.sortDescending {
+  @include iconMdsp(sortDescending);
+}
+.iconMdsp.sortFilled {
+  @include iconMdsp(sortFilled);
+}
+.iconMdsp.speechbubble {
+  @include iconMdsp(speechbubble);
+}
+.iconMdsp.speedo {
+  @include iconMdsp(speedo);
+}
+.iconMdsp.speedo2Inverted {
+  @include iconMdsp(speedo2Inverted);
+}
+.iconMdsp.speedoAlternative {
+  @include iconMdsp(speedoAlternative);
+}
+.iconMdsp.stemDown {
+  @include iconMdsp(stemDown);
+}
+.iconMdsp.stemLeft {
+  @include iconMdsp(stemLeft);
+}
+.iconMdsp.stemRight {
+  @include iconMdsp(stemRight);
+}
+.iconMdsp.stemUp {
+  @include iconMdsp(stemUp);
+}
+.iconMdsp.subtenant {
+  @include iconMdsp(subtenant);
+}
+.iconMdsp.tag {
+  @include iconMdsp(tag);
+}
+.iconMdsp.ticket {
+  @include iconMdsp(ticket);
+}
+.iconMdsp.types {
+  @include iconMdsp(types);
+}
+.iconMdsp.typesInverted {
+  @include iconMdsp(typesInverted);
+}
+.iconMdsp.update {
+  @include iconMdsp(update);
+}
+.iconMdsp.user {
+  @include iconMdsp(user);
+}
+.iconMdsp.userMultiple {
+  @include iconMdsp(userMultiple);
+}
+.iconMdsp.users {
+  @include iconMdsp(users);
+}
+.iconMdsp.variableLink {
+  @include iconMdsp(variableLink);
+}
+.iconMdsp.variableUnlink {
+  @include iconMdsp(variableUnlink);
+}

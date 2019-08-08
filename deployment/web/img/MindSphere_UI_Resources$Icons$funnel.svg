@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <polygon id="funnel-black-a" points="3 3 21 3 14 13 14 23.5 10 19.5 10 13"/>
+  </defs>
+  <use fill-rule="evenodd" xlink:href="#funnel-black-a"/>
+</svg>

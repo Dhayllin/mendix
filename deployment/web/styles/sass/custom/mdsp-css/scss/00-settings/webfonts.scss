@@ -1,0 +1,80 @@
+// 8
+@font-face {
+    font-family: "Siemens Sans Black";
+    src: url("../../assets/fonts/sisan08.eot?#{unixTimestamp}");
+    src: url("../../assets/fonts/sisan08.eot?#{unixTimestamp}#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/sisan08.woff2?#{unixTimestamp}") format("woff2"),
+    url("../../assets/fonts/sisan08.woff?#{unixTimestamp}") format("woff"),
+    url("../../assets/fonts/sisan08.ttf?#{unixTimestamp}") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+// 38
+@font-face {
+    font-family: "Siemens Sans Black Italic";
+    src: url("../../assets/fonts/sisan38.eot?#{unixTimestamp}");
+    src: url("../../assets/fonts/sisan38.eot?#{unixTimestamp}#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/sisan38.woff2?#{unixTimestamp}") format("woff2"),
+    url("../../assets/fonts/sisan38.woff?#{unixTimestamp}") format("woff"),
+    url("../../assets/fonts/sisan38.ttf?#{unixTimestamp}") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+// 6
+@font-face {
+    font-family: "Siemens Sans Bold";
+    src: url("../../assets/fonts/sisan06.eot?#{unixTimestamp}");
+    src: url("../../assets/fonts/sisan06.eot?#{unixTimestamp}#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/sisan06.woff2?#{unixTimestamp}") format("woff2"),
+    url("../../assets/fonts/sisan06.woff?#{unixTimestamp}") format("woff"),
+    url("../../assets/fonts/sisan06.ttf?#{unixTimestamp}") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+// 36
+@font-face {
+    font-family: "Siemens Sans Bold Italic";
+    src: url("../../assets/fonts/sisan36.eot?#{unixTimestamp}");
+    src: url("../../assets/fonts/sisan36.eot#iefix?#{unixTimestamp}") format("embedded-opentype"),
+    url("../../assets/fonts/sisan36.woff2?#{unixTimestamp}") format("woff2"),
+    url("../../assets/fonts/sisan36.woff?#{unixTimestamp}") format("woff"),
+    url("../../assets/fonts/sisan36.ttf?#{unixTimestamp}") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+// 33
+@font-face {
+    font-family: "Siemens Sans Italic";
+    src: url("../../assets/fonts/sisan33.eot?#{unixTimestamp}");
+    src: url("../../assets/fonts/sisan33.eot?#{unixTimestamp}#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/sisan33.woff2?#{unixTimestamp}") format("woff2"),
+    url("../../assets/fonts/sisan33.woff?#{unixTimestamp}") format("woff"),
+    url("../../assets/fonts/sisan33.ttf?#{unixTimestamp}") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+// 3
+@font-face {
+    font-family: "Siemens Sans Roman";
+    src: url("../../assets/fonts/sisan03.eot?#{unixTimestamp}");
+    src: url("../../assets/fonts/sisan03.eot?#{unixTimestamp}#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/sisan03.woff2?#{unixTimestamp}") format("woff2"),
+    url("../../assets/fonts/sisan03.woff?#{unixTimestamp}") format("woff"),
+    url("../../assets/fonts/sisan03.ttf?#{unixTimestamp}") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "mdspcss";
+    src: url('../../assets/fonts/mdspcss.eot');
+    src: url('../../assets/fonts/mdspcss.eot?#iefix') format('eot'),
+    url('../../assets/fonts/mdspcss.woff2') format('woff2'),
+    url('../../assets/fonts/mdspcss.woff') format('woff'),
+    url('../../assets/fonts/mdspcss.ttf') format('truetype');
+}

@@ -1,0 +1,2242 @@
+@charset "UTF-8";
+/*! MindSphere CSS / MindSphere Developer Agreement: developer.mindsphere.io/license.html
+*/
+/* =============================================================
+   MINDSPHERE Colors
+   ========================================================== */
+/* =============================================================
+   SIEMENS Colors
+   ========================================================== */
+/* =============================================================
+   Default settings
+   ========================================================== */
+/* =============================================================
+   Breakpoints
+   ========================================================== */
+/* =============================================================
+   Default margin and padding values
+   ========================================================== */
+/* =============================================================
+   Increments for content list column widths
+   ========================================================== */
+/* =============================================================
+   Default mixin for default transition of buttons, tabs, ...
+   ========================================================== */
+@font-face {
+  font-family: "Siemens Sans Black";
+  src: url("../../assets/fonts/sisan08.eot?unixTimestamp");
+  src: url("../../assets/fonts/sisan08.eot?unixTimestamp#iefix") format("embedded-opentype"), url("../../assets/fonts/sisan08.woff2?unixTimestamp") format("woff2"), url("../../assets/fonts/sisan08.woff?unixTimestamp") format("woff"), url("../../assets/fonts/sisan08.ttf?unixTimestamp") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Siemens Sans Black Italic";
+  src: url("../../assets/fonts/sisan38.eot?unixTimestamp");
+  src: url("../../assets/fonts/sisan38.eot?unixTimestamp#iefix") format("embedded-opentype"), url("../../assets/fonts/sisan38.woff2?unixTimestamp") format("woff2"), url("../../assets/fonts/sisan38.woff?unixTimestamp") format("woff"), url("../../assets/fonts/sisan38.ttf?unixTimestamp") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Siemens Sans Bold";
+  src: url("../../assets/fonts/sisan06.eot?unixTimestamp");
+  src: url("../../assets/fonts/sisan06.eot?unixTimestamp#iefix") format("embedded-opentype"), url("../../assets/fonts/sisan06.woff2?unixTimestamp") format("woff2"), url("../../assets/fonts/sisan06.woff?unixTimestamp") format("woff"), url("../../assets/fonts/sisan06.ttf?unixTimestamp") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Siemens Sans Bold Italic";
+  src: url("../../assets/fonts/sisan36.eot?unixTimestamp");
+  src: url("../../assets/fonts/sisan36.eot#iefix?unixTimestamp") format("embedded-opentype"), url("../../assets/fonts/sisan36.woff2?unixTimestamp") format("woff2"), url("../../assets/fonts/sisan36.woff?unixTimestamp") format("woff"), url("../../assets/fonts/sisan36.ttf?unixTimestamp") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Siemens Sans Italic";
+  src: url("../../assets/fonts/sisan33.eot?unixTimestamp");
+  src: url("../../assets/fonts/sisan33.eot?unixTimestamp#iefix") format("embedded-opentype"), url("../../assets/fonts/sisan33.woff2?unixTimestamp") format("woff2"), url("../../assets/fonts/sisan33.woff?unixTimestamp") format("woff"), url("../../assets/fonts/sisan33.ttf?unixTimestamp") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Siemens Sans Roman";
+  src: url("../../assets/fonts/sisan03.eot?unixTimestamp");
+  src: url("../../assets/fonts/sisan03.eot?unixTimestamp#iefix") format("embedded-opentype"), url("../../assets/fonts/sisan03.woff2?unixTimestamp") format("woff2"), url("../../assets/fonts/sisan03.woff?unixTimestamp") format("woff"), url("../../assets/fonts/sisan03.ttf?unixTimestamp") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mdspcss";
+  src: url("../../assets/fonts/mdspcss.eot");
+  src: url("../../assets/fonts/mdspcss.eot?#iefix") format("eot"), url("../../assets/fonts/mdspcss.woff2") format("woff2"), url("../../assets/fonts/mdspcss.woff") format("woff"), url("../../assets/fonts/mdspcss.ttf") format("truetype");
+}
+.iconMdsp {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+}
+
+.iconMdsp.addBook:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.agent:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowCircleccw:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowCirclecw:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowCircleDown:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowCircleInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowCircleLeft:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowCircleRight:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowCircleUp:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowExclamationMark:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowFirst:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowFirstTop:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowGoTo:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowLast:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowLastBottom:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowSingleDown:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowSingleLeft:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowSingleRight:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowSingleUp:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.arrowSquare:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.aspect:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.asset:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.assetArrow:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.assetInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.assetNetwork:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.audit:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.bell:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.bellAlternative:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.block:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.blockInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.box:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.calender:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.calenderAlternative:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.caretDown:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.caretLeft:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.caretRight:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.caretUp:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.check:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.checkCircle:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.checkInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.circleToCircle:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.clear:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.clearCircle:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.clearInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.clipboard:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.clipboardOk:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.cog:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.cogbox:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.cogInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.connect:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.cursorSquare:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.cursorSquarestrikethrough:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.delete:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.deselectAll:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.dotsh:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.dotshBlack:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.dotsv:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.download:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.downloadBlack:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.downloadBold:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.drilldownAction:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.edit:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.editBold:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.editInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.editSquare:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.exclamationmark:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.exclamationmarkCircle:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.exclamationmarkCircleInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.exclamationmarkDiamond:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.exclamationmarkDiamondInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.exclamationmarkInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.exit:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.extension:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.eye:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.eyeStrikethrough:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.filetree:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.flag:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.flagFilled:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.folder:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.frames:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.funnel:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.funnelBold:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.funnelEmpty:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.funnelList:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.globe:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.graph:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.graphInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.grid:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.gridInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.headset:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.house:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.houseInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.incognito:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.infoCircle:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.infoCircleInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.leaf:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.legal:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.legalInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.letter:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.link:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.listBulleted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.listBulletedPlus:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.locationMarker:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.lock:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.lockOpen:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.loupe:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.loupeInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.map:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.megaphone:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.minus:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.minusCircle:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.move:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.moveInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.navigateArrow:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.navigateArrowBack:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.navigateRight:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.navigateRightInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.outgoing:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.outgoingApp:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.outgoingAppCircle:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.outgoingMindsphere:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.package:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.paperclip:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.phone:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.pie:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.plus:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.plusCircle:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.plusInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.provider:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.puzzle:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.puzzleInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.questionmarkCircle:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.rectanglesStacked:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.roles:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.scopeA:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.scopeB:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.selectAll:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.settings:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.share:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.shoppingCart:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.sidebarHide:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.sidebarShow:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.sidebarWindow:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.sort:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.sortAscending:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.sortDescending:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.sortFilled:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.speechbubble:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.speedo:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.speedo2Inverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.speedoAlternative:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.stemDown:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.stemLeft:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.stemRight:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.stemUp:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.subtenant:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.tag:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.ticket:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.types:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.typesInverted:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.update:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.user:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.userMultiple:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.users:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.variableLink:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.iconMdsp.variableUnlink:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "mdspcss" !important;
+  content: "";
+}
+
+.h1 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-family: "Siemens Sans Black", sans-serif;
+  font-size: 36px;
+  font-size: rem(36px);
+  line-height: 43px;
+  line-height: rem(43px);
+  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+  margin-top: 0;
+}
+
+.h2 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-family: "Siemens Sans Bold", sans-serif;
+  font-size: 31px;
+  font-size: rem(31px);
+  line-height: 43px;
+  line-height: rem(43px);
+  margin-bottom: 8px;
+  margin-bottom: rem(8px);
+  margin-top: 0;
+}
+
+.h3 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-size: 26px;
+  font-size: rem(26px);
+  line-height: 36px;
+  line-height: rem(36px);
+  margin-bottom: 8px;
+  margin-bottom: rem(8px);
+  margin-top: 0;
+}
+
+.h4 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-size: 21px;
+  font-size: rem(21px);
+  line-height: 29px;
+  line-height: rem(29px);
+  margin-bottom: 4px;
+  margin-bottom: rem(4px);
+  margin-top: 0;
+}
+
+.h5 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-size: 17px;
+  font-size: rem(17px);
+  line-height: 23px;
+  line-height: rem(23px);
+  margin-bottom: 4px;
+  margin-bottom: rem(4px);
+  margin-top: 0;
+}
+
+.h6 {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-size: 16px;
+  font-size: rem(16px);
+  line-height: 22px;
+  line-height: rem(22px);
+  margin-bottom: 4px;
+  margin-bottom: rem(4px);
+  margin-top: 0;
+}
+
+.subheadline {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  color: #969696;
+  font-size: 17px;
+  font-size: rem(17px);
+  line-height: 25px;
+  line-height: rem(25px);
+}
+
+.p {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 15px;
+  font-size: rem(15px);
+  line-height: 21px;
+  line-height: rem(21px);
+  margin-bottom: 16px;
+  margin-bottom: rem(16px);
+  margin-top: 0;
+}
+.p.p--s {
+  font-size: 13px;
+  font-size: rem(13px);
+  line-height: 17px;
+  line-height: rem(17px);
+}
+
+.b, .strong {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-family: "Siemens Sans Bold", sans-serif;
+}
+
+.small {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 12px;
+  font-size: rem(12px);
+  line-height: 16px;
+  line-height: rem(16px);
+}
+
+.i, .em {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-family: "Siemens Sans Italic", sans-serif;
+}
+
+.mark {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Siemens Sans Roman", "Siemens Sans Regular", sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  background-color: #cce2fa;
+}

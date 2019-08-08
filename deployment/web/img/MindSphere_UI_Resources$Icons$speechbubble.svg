@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <path id="speeech-bubble-a" d="M10.4700011,15.1520017 C10.6289327,15.0526694 10.8125803,15 11,15 L20,15 L20,4 L4,4 L4,19.1957524 L10.4700011,15.1520017 Z M3,3 L21,3 L21,16 L11,16 L3,21 L3,3 Z"/>
+  </defs>
+  <use xlink:href="#speeech-bubble-a"/>
+</svg>

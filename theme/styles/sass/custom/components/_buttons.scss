@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Buttons
+
+   Default Bootstrap and Mendix Buttons
+========================================================================== */
+
+// Mendix button link
+.mx-link {
+    padding: 0;
+    color: $link-color;
+    a {
+        color: inherit;
+    }
+}
+
+// Images and icons in buttons
+.btn,
+.mx-button,
+.mx-link {
+	&.iconMdsp {
+		font-family: $siemensFontRegular !important;
+		font-size: 14px;
+		padding-top: 6px;
+    	padding-bottom: 5px;
+    	
+    	&.btn-icon-top {
+    		&:before {
+    			display: block;
+			}
+		}    			
+
+		&:before {
+			font-size: 18px;
+			vertical-align: middle;
+		}
+	}
+    img {
+        //height: auto; // MXUI override who set the height on 16px default
+        height: $font-size-default + 2px;
+        margin-top: -4px;
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <path id="pencil-black-a" d="M13.9793385,6.43934415 L18.0077759,10.4677816 L6.92513825,21.5504192 L2.22529462,22.2218254 L2.89670085,17.5219818 L13.9793385,6.43934415 Z M15.510412,4.90827066 L18.1968572,2.22182541 L22.2252946,6.2502628 L19.5388494,8.93670806 L15.510412,4.90827066 Z"/>
+  </defs>
+  <use xlink:href="#pencil-black-a"/>
+</svg>

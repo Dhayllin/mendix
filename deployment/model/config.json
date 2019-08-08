@@ -1,0 +1,26 @@
+{
+  "Configuration": {
+    "DatabaseName": "default",
+    "DatabasePassword": "",
+    "DatabaseType": "HSQLDB",
+    "DatabaseHost": "",
+    "DatabaseUserName": "",
+    "DatabaseUseIntegratedSecurity": "False",
+    "ApplicationRootUrl": "http://localhost:8080/",
+    "ScheduledEventExecution": "None"
+  },
+  "Constants": {
+    "MindSphereOSBarConnector.Config": "{\"displayName\": \"Sample App\", \"appVersion\": \"0.0.0\", \"appCopyright\": \"© Siemens 2019\", \"links\": { \"default\": [{\"type\": \"WWW\",\"name\": \"DEV Information\",\"value\": \"http://sie.ag/abc\"}], \"de\": [{\"type\": \"WWW\",\"name\": \"Entwicklungs-Information\",\"value\": \"http://sie.ag/abc\"}]}}",
+    "MindSphereSingleSignOn.CockpitApplicationName": "dontPanic",
+    "MindSphereSingleSignOn.MindSphereGatewayURL": "https://gateway.eu1.mindsphere.io",
+    "MindSphereSingleSignOn.PublicKeyURL": "https://core.piam.eu1.mindsphere.io/token_keys",
+    "MindSphereSingleSignOn.CredentialsType": "True",
+    "MindSphereSingleSignOn.AskForCredentialsOnStartup": "True",
+    "MindSphereSingleSignOn.CockpitApplicationVersion": "1.0.0",
+    "MindSphereSingleSignOn.UserTenant": "mdspdvbr",
+    "MindSphereSingleSignOn.EnableLocalMindSphereApiReverseProxy": "True",
+    "MindSphereSingleSignOn.HostTenant": "mdspdvbr",
+    "MindSphereSingleSignOn.ModuleName": ""
+  },
+  "AdminPassword": "1"
+}

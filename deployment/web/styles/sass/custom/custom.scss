@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Here do you define the .scss files you want to import into your project
+
+========================================================================== */
+// mdsp css
+@import "mdsp-css/scss/mdsp-css-custom";
+
+@import "custom-variables";
+
+// Base
+@import "base/base";
+
+// components
+@import "components/alerts";
+@import "components/buttons";
+@import "components/modals";
+@import "components/navigationtree";
+@import "components/typography";
+
+// Building Blocks
+@import "buildingblocks/card";
+
+// layouts
+@import "layouts/layout-atlas";
+@import "layouts/layout-atlas-responsive";

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <path id="lock-closed-default-a" d="M6,10 L6,21 L18,21 L18,10 L6,10 Z M7,9 L7,7.5 C7,4.48491674 9.23642506,2 12,2 C14.7635749,2 17,4.48491674 17,7.5 L17,9 L18,9 C18.5522847,9 19,9.44771525 19,10 L19,21 C19,21.5522847 18.5522847,22 18,22 L6,22 C5.44771525,22 5,21.5522847 5,21 L5,10 C5,9.44771525 5.44771525,9 6,9 L7,9 Z M8,9 L16,9 L16,7.5 C16,5.01508326 14.1864251,3 12,3 C9.81357494,3 8,5.01508326 8,7.5 L8,9 Z"/>
+  </defs>
+  <use xlink:href="#lock-closed-default-a"/>
+</svg>

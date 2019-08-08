@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <path id="exclamation-circle-black-a" d="M12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 Z M11,16 L11,18 L13,18 L13,16 L11,16 Z M11,6 L11,14 L13,14 L13,6 L11,6 Z"/>
+  </defs>
+  <use xlink:href="#exclamation-circle-black-a"/>
+</svg>

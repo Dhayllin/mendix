@@ -1,0 +1,133 @@
+{
+  "RuntimeVersion": "7.23.7.55882",
+  "ProjectID": "7e699812-00de-48fc-8d21-f2baa0ef5e17",
+  "ProjectName": "Dont Panic",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Admin"
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "User"
+    }
+  },
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "Constants": [
+    {
+      "Name": "MindSphereOSBarConnector.Config",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "{\"displayName\": \"Sample App\", \"appVersion\": \"0.0.0\", \"appCopyright\": \"© Siemens 2019\", \"links\": { \"default\": [{\"type\": \"WWW\",\"name\": \"DEV Information\",\"value\": \"http://sie.ag/abc\"}], \"de\": [{\"type\": \"WWW\",\"name\": \"Entwicklungs-Information\",\"value\": \"http://sie.ag/abc\"}]}}"
+    },
+    {
+      "Name": "MindSphereSingleSignOn.AskForCredentialsOnStartup",
+      "Type": "Boolean",
+      "Description": "",
+      "DefaultValue": "True"
+    },
+    {
+      "Name": "MindSphereSingleSignOn.CockpitApplicationName",
+      "Type": "String",
+      "Description": "Name of the application used in the Developer Cockpit.\r\n\r\nThis is used for JWT validation process and is mapped to the \"aud\" claim.",
+      "DefaultValue": "dontPanic"
+    },
+    {
+      "Name": "MindSphereSingleSignOn.CockpitApplicationVersion",
+      "Type": "String",
+      "Description": "Used to get application credentials, must be identical to the version in the developer cockpit.",
+      "DefaultValue": "1.0.0"
+    },
+    {
+      "Name": "MindSphereSingleSignOn.CredentialsType",
+      "Type": "Boolean",
+      "Description": "If the value is 'true' the MindSphere Application Credentials' will be used, otherwise the 'Service Credentials' will be used to fetch a MindSphere token for local development.\r\n\r\nNOTE: Service Credentials are deprecated and should only be used if Application Credentials are not possible.",
+      "DefaultValue": "True"
+    },
+    {
+      "Name": "MindSphereSingleSignOn.EnableLocalMindSphereApiReverseProxy",
+      "Type": "Boolean",
+      "Description": "",
+      "DefaultValue": "True"
+    },
+    {
+      "Name": "MindSphereSingleSignOn.HostTenant",
+      "Type": "String",
+      "Description": "Name of Tenant where application is hosted.\r\nName is used during retrieval of application credentials.",
+      "DefaultValue": "mdspdvbr"
+    },
+    {
+      "Name": "MindSphereSingleSignOn.MindSphereGatewayURL",
+      "Type": "String",
+      "Description": "The Mindsphere Gateway URL",
+      "DefaultValue": "https://gateway.eu1.mindsphere.io"
+    },
+    {
+      "Name": "MindSphereSingleSignOn.ModuleName",
+      "Type": "String",
+      "Description": "MindSphereSingleSignOn",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "MindSphereSingleSignOn.PublicKeyURL",
+      "Type": "String",
+      "Description": "Endpoint where to fetcht the public keys for token validation.",
+      "DefaultValue": "https://core.piam.eu1.mindsphere.io/token_keys"
+    },
+    {
+      "Name": "MindSphereSingleSignOn.UserTenant",
+      "Type": "String",
+      "Description": "Used in get application credentials.",
+      "DefaultValue": "mdspdvbr"
+    }
+  ],
+  "ScheduledEvents": [],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/ws/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/ws-doc/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/odata/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/odata-doc/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/api-doc/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}

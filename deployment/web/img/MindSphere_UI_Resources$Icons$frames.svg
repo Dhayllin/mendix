@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <path id="frames-a" d="M4,19 L10,19 L10,12 L4,12 L4,19 Z M11,20 L3,20 L3,11 L11,11 L11,20 Z M11,19 L20,19 L20,12 L11,12 L11,19 Z M21,20 L10,20 L10,11 L21,11 L21,20 Z M4,5 L4,11 L20,11 L20,5 L4,5 Z M3,12 L3,4 L21,4 L21,12 L3,12 Z"/>
+  </defs>
+  <use xlink:href="#frames-a"/>
+</svg>

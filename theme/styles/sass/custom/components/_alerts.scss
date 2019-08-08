@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Alerts
+
+   Default Bootstrap Alert boxes. Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages
+========================================================================== */
+
+
+//== Design Properties
+//## Helper classes to change the look and feel of the component
+//-------------------------------------------------------------------------------------------------------------------//
+
+// Color variations 
+.alert-success {
+    color: #5e6919;
+    border-color: #c8d1ba;
+    background-color: #e6eed1;
+}
+
+.alert-info {
+    color: #235461;
+    border-color: #bbd0d7;
+    background-color: #d1e8f0;
+}
+
+.alert-warning {
+    color: #665e48;
+    border-color: #e6dbb7;
+    background-color: #fff4ca;
+}
+
+.alert-danger {
+    color: #811211;
+    border-color: #d6b4b4;
+    background-color: #fcd3d2;
+}
+

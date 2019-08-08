@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <path id="list-bulleted-a" d="M7,7 L7,6 L22,6 L22,7 L7,7 Z M3,7 L3,6 L5,6 L5,7 L3,7 Z M7,12 L7,11 L22,11 L22,12 L7,12 Z M3,12 L3,11 L5,11 L5,12 L3,12 Z M7,17 L7,16 L22,16 L22,17 L7,17 Z M3,17 L3,16 L5,16 L5,17 L3,17 Z"/>
+  </defs>
+  <use xlink:href="#list-bulleted-a"/>
+</svg>

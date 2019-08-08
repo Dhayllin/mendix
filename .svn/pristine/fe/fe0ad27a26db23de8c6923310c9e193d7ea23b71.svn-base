@@ -1,0 +1,87 @@
+@import "mdsp-css/scss/00-settings/color";
+@import "mdsp-css/scss/00-settings/settings";
+
+//== Gray Shades
+//## Different gray shades to be used for our variables and components
+$gray-darker:                                       $grey800;
+$gray-dark:                                         $grey400;
+$gray:                                              #6E6E6E;
+$gray-light:                                        $grey250;
+$gray-primary:                                      $grey200;
+$gray-lighter:                                      $grey100;
+$black:                                             #000000;
+
+//== Step 1: Brand Colors
+$brand-default:                                     $grey200;
+$brand-primary:                                     $stateBlue100;
+$brand-inverse:                                     $grey800;
+$brand-info:                                        $brand-primary;
+$brand-success:                                     $functionalGreen;
+$brand-warning:                                     $functionalYellow;
+$brand-danger:                                      $functionalRed;
+
+// Used for other variables
+$default-border-color:                              $gray-primary;
+
+//== Step 3: Typography
+$font-family-import:                                false; // will be loaded via MS OS Bar
+$font-family-base:                                  $siemensFontRegular;
+$font-base-size:                                    16px;
+$font-base-color:                                   $grey800;
+$link-color:                                        $brand-primary;
+$font-size-h1:                                      36px;
+$font-size-h2:                                      31px;
+$font-size-h3:                                      26px;
+$font-size-h4:                                      21px;
+$font-color-headers:                                $black;
+
+//== Step 2: UI Customization
+
+// Topbar
+$topbar-bg:                                         #F0F0F0;
+$navtopbar-border-color:                            $default-border-color;
+$topbar-border-color:                               $navtopbar-border-color;
+$topbar-minimalheight:                              60px;
+$navtopbar-color:                                   $font-base-color;
+$navbar-brand-name:                                 $default-border-color;
+$brand-logo:                                        "../../../img/MindSphereDefaultApp.png";
+$brand-logo-height:                                 32px;
+$brand-logo-width:                                  32px;
+
+// Sidebar
+$sidebar-bg:                                        #F0F0F0;
+$navsidebar-color:                                  #323232;
+$navsidebar-color-hover:                            $navsidebar-color;
+
+// Backgrounds
+$bg-color:                                          $white;
+$bg-color-secondary:                                $white;
+
+// == Old variables used in theme customizer to the new lib variables
+$font-size-default:                                 $font-base-size;
+$font-color-default:                                $font-base-color;
+$border-color-default:                              $default-border-color;
+$font-color-header:				                    $font-color-headers;
+
+//== Media queries breakpoints
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                             480px !default;
+
+// Small screen / tablet Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                             768px !default;
+
+// Medium screen / desktop Deprecated `$screen-md` as of v3.0.1
+$screen-md:                             992px !default;
+
+// Large screen / wide desktop Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                             1200px !default;
+
+// So media queries don't overlap when required, provide a maximum (used for max-width)
+$screen-xs-max:                         ($screen-sm - 1) !default;
+$screen-sm-max:                         ($screen-md - 1) !default;
+$screen-md-max:                         ($screen-lg - 1) !default;
+
+
+ 

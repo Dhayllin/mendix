@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Typography
+========================================================================== */
+
+.mx-text {
+	&.iconMdsp {
+		font-family: $siemensFontRegular !important;
+		&:before {
+			font-size: 18px;
+			margin-right: 4px;
+			vertical-align: middle;
+		}
+	}
+}
+
+label {
+    &.iconMdsp {
+		font-family: $siemensFontRegular !important;
+		&:before {
+			font-size: 18px;
+			margin-right: 4px;
+			vertical-align: middle;
+		}
+	}
+}
+

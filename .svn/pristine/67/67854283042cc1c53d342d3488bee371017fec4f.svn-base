@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Atlas layout
+   
+   The core stucture of all atlas layouts
+========================================================================== */
+.layout-atlas {
+
+    // Sidebar
+    .region-sidebar {
+        border-right: 1px solid #cccccc;
+		.btn-inverse {
+			color: #323232;
+		}
+    }
+    
+    // Topbar
+    .region-topbar {
+        &::before {
+            height: 0px;
+        }
+	    .glyphicon {
+	        color: #323232;
+	    }
+    }
+}

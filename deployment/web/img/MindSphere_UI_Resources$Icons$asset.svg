@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <path id="assets-a" d="M11.5,1 L21,6.25 L21,16.75 L11.5,22 L2,16.75 L2,6.25 L11.5,1 Z M11.5,2.14254176 L3,6.83991018 L3,16.1600898 L11.5,20.8574582 L20,16.1600898 L20,6.83991018 L11.5,2.14254176 Z M7,9 L8,9 L8,14.1231056 L7,14.1231056 L7,9 Z M11,7 L12,7 L12,17 L11,17 L11,7 Z M15,9 L16,9 L16,14 L15,14 L15,9 Z"/>
+  </defs>
+  <use xlink:href="#assets-a"/>
+</svg>
